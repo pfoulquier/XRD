@@ -11,11 +11,11 @@ spec=['']
 spec=open("20210636_Foulquier_BetaTest.txt").read() #Read spec file
 a=str(spec)
 
-x = [_.start() for _ in re.finditer('#S', a)] #Locate the start of the file name
+x = [_.start() for _ in re.finditer('#S', a)] #Locate the start of the scan name
 
-y = [_.start() for _ in re.finditer('#D', a)] #Locate the end of the file name
+y = [_.start() for _ in re.finditer('#D', a)] #Locate the end of the scan name
 
-z = [_.start() for _ in re.finditer('#L', a)] #Locate the beginning of the date
+z = [_.start() for _ in re.finditer('#L', a)] #Locate the beginning of the scan data
 
 
 
