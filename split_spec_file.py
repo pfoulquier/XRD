@@ -17,8 +17,6 @@ y = [_.start() for _ in re.finditer('#D', a)] #Locate the end of the scan name
 
 z = [_.start() for _ in re.finditer('#L', a)] #Locate the beginning of the scan data
 
-
-
 i=0
 
 while i<len(x)-1:
